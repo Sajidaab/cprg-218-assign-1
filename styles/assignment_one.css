@@ -1,1 +1,35 @@
+/* Mobile layout */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* Tablet layout */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card {
+    width: calc(50% - 20px);
+  }
+  
+  .card:last-child {
+    width: 100%;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
 
